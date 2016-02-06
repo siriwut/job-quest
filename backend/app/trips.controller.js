@@ -3,13 +3,14 @@
 /** trips controller **/
 
 //load modules
-const _ = require('lodash'), 
+const _ = require('lodash'),
 Trip = require('./trip.model');
 
 //list all trips 
 exports.list = function(req, res) {
 	Trip
-	.findAsync(null, { name: 1 })
+	.find({}, { name: 1 })
+	.exec()
 	.then((trips) => {
 		res.jsonp(trips);
 	}, (e) => {
@@ -24,7 +25,7 @@ exports.add = function(req, res) {
 	let trip = new Trip(req.body);
 
 	trip
-	.saveAsync()
+	.save()
 	.then((trip) => {
 		res.jsonp(trip);
 	}, (e) => {
@@ -44,7 +45,7 @@ exports.edit = function(req, res) {
 	let trip = _.assignIn(req.trip, req.body);
 
 	trip
-	.saveAsync()
+	.save()
 	.then((trip) => {
 		res.jsonp(trip);
 	}, (e) => {
@@ -59,7 +60,7 @@ exports.remove = function(req, res) {
 	let trip = req.trip;
 
 	trip
-	.removeAsync()
+	.remove()
 	.then((trip) => {
 		res.jsonp(trip);
 	}, (e) => {
@@ -72,9 +73,10 @@ exports.remove = function(req, res) {
 //find trip by id param
 exports.findById = function(req, res, next, id) {
 	Trip
-	.findByIdAsync(id)
+	.findById(id)
+	.exec()
 	.then((trip) => {
-		//if trip not empty assign assign trip and send req to next middleware
+		//if trip not empty assign, assign trip and send req to next middleware
 		if(trip) {
 			req.trip = trip;
 			return next();

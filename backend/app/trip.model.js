@@ -2,8 +2,7 @@
 /** trip model **/
 
 //load modules
-const Promise = require('bluebird'), 
-mongoose = Promise.promisifyAll(require('mongoose')),
+const mongoose = require('mongoose'),
 Schema = mongoose.Schema;
 
 //create schema for trip
