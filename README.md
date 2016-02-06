@@ -48,4 +48,7 @@ Backend Task
 
 What is the difference between MongoDB and MySql?
 
-*\<Write your answer here>*
+- MongoDB is NoSQL database (none-relational), but MySql is relational database.
+- MongoDB provide way to manipulate none-structured database based on document-oriented (similar with JSON document).
+- MongoDB manipulate huge volume of data collections not depend on fields or tables relation (easy to scalability).
+- MySql manipulate data collections depend on structured of fields or tables relation, hard to scale set of fields if there are large of data. 
