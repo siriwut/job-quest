@@ -1,0 +1,66 @@
+body {
+  font-family: "Roboto", sans-serif; }
+
+.section {
+  margin-top: 70px; }
+  .section.inspiration {
+    background: #fff; }
+    .section.inspiration .inner {
+      width: 100%;
+      padding: 10px 10px 10px 10px; }
+      .section.inspiration .inner .btn-all-inspirations {
+        color: #fff;
+        background: #e86a1a;
+        width: 228px;
+        height: 60px; }
+    .section.inspiration .description {
+      text-align: center; }
+      @media screen and (min-width: 992px) {
+        .section.inspiration .description {
+          padding: 0 100px 0 100px; } }
+      .section.inspiration .description h1 {
+        color: #ffa500;
+        font-family: "Roboto", sans-serif; }
+    .section.inspiration .local-warp {
+      width: auto;
+      text-align: center;
+      margin-top: 30px; }
+
+.new-navbar {
+  padding-top: 13px;
+  min-height: 70px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px; }
+
+@media screen and (min-width: 992px) {
+  .container {
+    padding: 0 80px 0 80px; } }
+
+.image-box {
+  position: relative;
+  height: 220px;
+  margin-top: 20px; }
+  .image-box .image {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    background-repeat: no-repeat; }
+  .image-box h2 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    width: 100%;
+    z-index: 1;
+    margin: 0 auto;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */

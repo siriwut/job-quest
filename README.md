@@ -23,7 +23,10 @@ Frontend Task
 
 Please explain what is single-page application and how it work. Give examples of tools used to make SPAs.
 
-*\<Write your answer here>*
+SPAs is web application that load html document at once time and update page dynamically without
+page reload by use AJAX to fetch data and new pages.
+
+SPAs such as AngularJS, Backbond.js and etc...
 
 Backend Task
 ---

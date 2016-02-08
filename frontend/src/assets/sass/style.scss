@@ -1,0 +1,95 @@
+$font-stack: "Roboto", sans-serif;
+$bg-base-color: #fff;
+$break-md: 992px;
+$base-position: relative;
+
+body {
+	font-family: $font-stack;
+}
+
+.section {
+	margin-top: 70px;	
+	
+	&.inspiration {
+		background: $bg-base-color;		
+		.inner {
+			width: 100%;
+			padding: 10px 10px 10px 10px;
+
+			.btn-all-inspirations {
+				color: $bg-base-color;
+				background: #e86a1a;
+				width: 228px;
+				height: 60px;
+			}
+		}
+		.description {
+			@media screen and (min-width: $break-md) {
+				padding: 0 100px 0 100px;
+			}
+			text-align: center;
+
+			h1 {
+				color: #ffa500;
+				font-family: $font-stack;
+			}
+		}
+
+		.local-warp {
+			width: auto;
+			text-align: center;
+			margin-top: 30px;
+		}
+	} 
+}
+
+.new-navbar {
+	padding-top: 13px;
+	min-height: 70px;
+	background: $bg-base-color;
+	box-shadow: rgba(0,0,0,.4) 0 0 10px;
+}
+
+
+.container {
+	@media screen and (min-width: $break-md) {
+		padding: 0 80px 0 80px;
+	}
+}
+
+.image-box {
+	position: $base-position;
+	height: 220px;
+	margin-top: 20px;
+
+	.image {
+		width: 100%;
+		height: 100%;
+		float: left;
+		position: $base-position;
+		overflow: hidden;
+		background-size: cover;
+		background-position: 50% 50%;
+		border-radius: 5px;
+		background-repeat: no-repeat;
+	}
+
+	h2 {
+		position: absolute;
+		top: 100px;
+		left: 0;
+		right: 0;
+		color: #fff;
+		width: 100%;
+		z-index: 1;
+		margin: 0 auto;
+		font-size: 22px;
+		text-align: center;
+		font-weight: bold;
+	}
+}
+
+
+
+
+
